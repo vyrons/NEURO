@@ -1,0 +1,283 @@
+<a class="skip" href="#main">Skip to content</a>
+<div class="nsb" id="nsb" aria-hidden="true"><div class="nsb-thumb" id="nsbThumb"></div></div>
+<div class="cur" id="cur" aria-hidden="true"><i></i></div>
+<div class="cur-ring" id="curRing" aria-hidden="true"><div class="cr"></div></div><div class="cur-blob" id="curBlob" aria-hidden="true"><div class="cb"><span><em>&larr;</em><b id="curLabel">DRAG</b><em>&rarr;</em></span></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="notify" id="notify" hidden><div class="gate" role="dialog" aria-modal="true" aria-labelledby="notifyT"><span class="hud muted">Drop alert</span><h2 id="notifyT">Get the signal first.</h2><p class="muted">One email when the next drop or a restock opens. Nothing else.</p><form class="em-form" id="ntForm" novalidate><label class="hud muted" for="ntInput">Email</label><div class="em-row"><input id="ntInput" type="email" placeholder="you@email.com" autocomplete="email" data-cursor="text"><button type="submit" data-cursor="btn">Notify me</button></div><span class="hud-s msg" id="ntMsg" aria-live="polite"></span></form><button class="pill" id="ntClose" type="button" data-cursor="btn" style="justify-self:start">Close</button></div></div>
+<div class="cookie" id="cookie" hidden role="region" aria-label="Cookies"><span class="hud muted">Cookies</span><p style="font-size:14px">Essential cookies keep the site working. Analytics load only if you say yes.</p><div class="row"><button class="btn acc" id="ckAll" type="button" data-cursor="btn" style="padding:11px 16px"><span class="rl"><span><span>Accept</span><span aria-hidden="true">Accept</span></span></span></button><button class="btn ghost" id="ckEss" type="button" data-cursor="btn" style="padding:11px 16px"><span class="rl"><span><span>Essentials only</span><span aria-hidden="true">Essentials only</span></span></span></button></div></div>
+<div class="pt" id="pt" aria-hidden="true"><div class="ln"></div><b id="ptB">SIGNAL</b></div>
+
+<div class="g2" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateT" hidden>
+  <div class="g2-amb" aria-hidden="true"></div>
+  <p class="hud g2-top">NEURO · Series 01 · Neurotransmitter</p>
+  <h2 class="sr" id="gateT">Blind box disclosure</h2>
+  <div class="g2-row">
+    <span class="g2-w" aria-hidden="true">EVERY BOX</span>
+    <button class="g2-btn" id="gateEnter" type="button" aria-describedby="gateD"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56"/><circle class="p" cx="60" cy="60" r="56" pathLength="1"/></svg><span>Hold<br>to open</span></button>
+    <span class="g2-w" aria-hidden="true">IS A SIGNAL</span>
+  </div>
+  <ul class="g2-d hud" id="gateD"><li>15+ · Collectible figures, not toys</li><li>One random figure per box</li><li>Secret SYNAPSE <b>1 : 144</b></li></ul>
+  <p class="g2-alt hud-s">Press and hold, or press Enter · <button type="button" class="g2-exit" id="gateExit">Leave</button></p>
+</div>
+
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="top"><span class="logo">NEURO</span><button class="pill close" id="menuClose" type="button" data-cursor="btn">Close</button></div>
+  <ol>
+    <li><a href="#statement"><small>01</small>Signal</a></li>
+    <li><a href="#lineup"><small>02</small>Lineup</a></li>
+    <li><a href="#characters"><small>03</small>Files</a></li>
+    <li><a href="#how"><small>04</small>How it works</a></li>
+    <li><a href="#box"><small>05</small>The box</a></li>
+    <li><a href="#unbox"><small>06</small>Pick a box</a></li>
+    <li><a href="#secret"><small>07</small>Secret</a></li>
+    <li><a href="#map"><small>08</small>Chemistry</a></li>
+    <li><a href="#collect"><small>09</small>Collect</a></li>
+    <li><a href="#faq-sec"><small>10</small>FAQ</a></li>
+  </ol>
+  <div class="hud" style="color:#9AA4B0">Every box is a signal.</div>
+</div>
+
+<!-- issue overlay (character page) -->
+<div class="iss-ov" id="issue" role="dialog" aria-modal="true" aria-labelledby="issName">
+  <div class="iss-top"><span class="hud" id="issTopNo">ISSUE #01 · NEURO SERIES 01</span><div class="row"><button class="pill" id="issPrev" type="button" data-cursor="btn" aria-label="Previous character">&larr; Prev</button><button class="pill" id="issNext" type="button" data-cursor="btn" aria-label="Next character">Next &rarr;</button><button class="pill" id="issClose" type="button" data-cursor="btn">Close</button></div></div>
+  <div class="iss-body">
+    <div class="issue">
+      <div class="iss-cover" id="issCover" data-cursor="view" data-cursor-label="ISSUE"><span class="hud tl" id="issNo">ISSUE #01</span><span class="hud tr">NEURO · S01</span><div class="mast" id="issMast">DOPA</div><div class="f fig fig-dopa" id="issFig" role="img" aria-label="Character figure"></div><div class="call" id="issBox1"></div><span class="cl" id="issCall1">RED VINYL</span><div class="call" id="issBox2"></div><span class="cl" id="issCall2">CLEAR PVC</span><span class="bl" id="issArchC">The Chaser</span></div>
+      <div class="iss-info">
+        <div class="chips" id="issChips" role="group" aria-label="Switch character"></div>
+        <span class="hud muted" id="issChem">DOPAMINE · NEUROTRANSMITTER</span>
+        <h2 class="iss-h" id="issName">DOPA</h2>
+        <p id="issLine" class="iss-line"></p>
+        <p id="issLore" class="muted" style="max-width:52ch"></p>
+        <dl><dt>Archetype</dt><dd id="issArch">The Chaser</dd><dt>Materials</dt><dd id="issMat">-</dd><dt>Odds</dt><dd id="issOdds">About 1 : 8 per box</dd><dt>Format</dt><dd>Blind box · 1 random figure · 9 cm</dd></dl>
+        <div class="price"><b>US$16.76</b><span class="hud-s muted">per random box · Rp300.000</span><span class="stock hud-s" id="issStock"><i></i>In stores now</span></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center"><button class="btn ghost" id="openNotify" type="button" data-cursor="btn"><span class="rl"><span><span>Notify me</span><span aria-hidden="true">Notify me</span></span></span></button></div>
+        <span class="hud-s muted">You buy a random box. This page shows who could be inside, not who will be.</span>
+      </div>
+    </div>
+    <section class="iss-sec" aria-labelledby="ucT">
+      <div class="iss-sh"><h3 id="ucT" class="hud">(Up close)</h3><div class="car-nav"><button class="pill" id="carPrev" type="button" data-cursor="btn">&larr; Prev</button><button class="pill" id="carNext" type="button" data-cursor="btn">Next &rarr;</button></div></div>
+      <div class="car" id="car" data-cursor="drag"><div class="car-track" id="carTrack"></div></div>
+    </section>
+    <section class="iss-sec" aria-labelledby="relT">
+      <div class="iss-sh"><h3 id="relT" class="hud">Connected signals</h3></div>
+      <div class="rel" id="rel"></div>
+    </section>
+  </div>
+</div>
+
+<div class="prog-top" aria-hidden="true"><i id="progTop"></i></div>
+<div class="rvo" id="rvo" role="dialog" aria-modal="true" aria-label="Lab review card" hidden>
+  <div class="rvo-bg"></div>
+  <canvas class="rvo-smoke" id="rvoSmoke" aria-hidden="true"></canvas>
+  <div class="rvo-top"><span class="hud">NEURO LAB · REVIEW FILE</span><div class="row"><button class="pill" type="button" id="rvoPrev" aria-label="Previous card">&larr; Prev</button><button class="pill" type="button" id="rvoNext" aria-label="Next card">Next &rarr;</button><button class="pill" type="button" id="rvoClose">Close</button></div></div>
+  <div class="rvo-grid">
+    <div class="rvo-cardwrap"><div class="rvo-card" id="rvoCard" tabindex="0" role="button" aria-label="Lab review card. Select to flip."><div class="rvo-tilt" id="rvoTilt"><div class="rvo-in" id="rvoIn"></div></div></div><span class="hud-s rvo-hint">Hover to tilt · select to flip</span></div>
+    <div class="rvo-side"><div class="rvo-term" id="rvoTerm" role="status"></div></div>
+  </div>
+</div>
+
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <span class="hg" aria-hidden="true"></span>
+    <a class="logo" href="#top" data-cursor="link">NEURO</a>
+    <nav class="hnav" aria-label="Chapters">
+      <a href="#statement" data-cursor="link">Signal</a>
+      <a href="#lineup" data-cursor="link">Lineup</a>
+      <a href="#characters" data-cursor="link">Files</a>
+      <a href="#unbox" data-cursor="link">Pick a box</a>
+      <a href="#secret" data-cursor="link">Secret</a>
+      <a href="#collect" data-cursor="link">Collect</a>
+    </nav>
+    <div class="hmeta">
+      <button class="tsw" id="themeBtn" type="button" role="switch" aria-checked="false" aria-label="Dark mode" title="Switch theme. Or press and hold any empty space." data-cursor="btn"><span class="tsw-tr"><span class="tsw-k"><svg class="i-ice" width="14" height="14" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 1.5v15M2.5 5.2l13 7.6M2.5 12.8l13-7.6"/></svg><svg class="i-moon" width="14" height="14" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M14.5 11.2A6.5 6.5 0 0 1 6.8 3.5a6.5 6.5 0 1 0 7.7 7.7z"/></svg></span></span></button>
+      <button class="snd pending" id="sndBtn" type="button" aria-pressed="false" aria-label="Music ready. Playback starts on your next interaction." data-cursor="btn"><span class="snd-eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span></button><audio id="sndAudio" src="audio/neuro-theme.mp3" preload="auto" autoplay loop></audio>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu" data-cursor="btn"><span class="mb-t">Menu</span><i aria-hidden="true"><b></b><b></b></i></button>
+    </div>
+  </div>
+</header>
+<svg class="sr" aria-hidden="true" width="0" height="0"><filter id="lens" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB"><feImage id="lensMap" x="0" y="0" width="1200" height="56" preserveAspectRatio="none" result="map"/><feGaussianBlur in="SourceGraphic" stdDeviation="3" result="bl"/><feDisplacementMap in="bl" in2="map" scale="-46" xChannelSelector="R" yChannelSelector="G" result="dr"/><feColorMatrix in="dr" type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="r"/><feDisplacementMap in="bl" in2="map" scale="-41" xChannelSelector="R" yChannelSelector="G" result="dg"/><feColorMatrix in="dg" type="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 1 0" result="g"/><feDisplacementMap in="bl" in2="map" scale="-36" xChannelSelector="R" yChannelSelector="G" result="db"/><feColorMatrix in="db" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0" result="b"/><feBlend in="r" in2="g" mode="screen" result="rg"/><feBlend in="rg" in2="b" mode="screen" result="rgb"/><feColorMatrix in="rgb" type="saturate" values="1.5"/></filter></svg>
+
+
+
+<main id="main">
+<section class="hero" id="top" style="--hc:#D9262C">
+  <div class="hero-notch" id="heroNotch"><div class="hero-stage">
+    <h1 class="hero-wm" id="heroWm"><span class="ln"><span>NEURO</span></span><span class="sr"> Series 01, Neurotransmitter: collectible blind box figures</span></h1>
+    <div class="scan" id="heroScan" style="--hm:var(--f-dopa)">
+      <div class="dots" aria-hidden="true"></div>
+      <div class="f fig fig-dopa" id="heroFig" role="img" aria-label="DOPA, Dopamine, The Chaser, red vinyl jacket and clear PVC cargo"></div>
+      <div class="sbar" aria-hidden="true"></div>
+    </div>
+    <div class="hero-frame" aria-hidden="true"><i></i><i></i><i></i><i></i><span class="hud tl" id="heroScanN">[ SCAN 01/09 ]</span><span class="hud tr" id="heroNo">NO. 01 · DOPA</span></div>
+  </div>
+  <div class="hero-bot"><div class="wrap">
+    <div class="hb-l">
+      <p class="hud muted">Series 01 · Neurotransmitter</p>
+      <p class="lede">Every box is a signal.</p>
+      <p class="s">Nine collectible figures, each one a brain chemical with a face. One random figure per box. One secret in 144.</p>
+      <div class="row"><a class="btn acc mag" href="#statement" data-cursor="btn"><span class="rl"><span><span>Enter the signal</span><span aria-hidden="true">Enter the signal</span></span></span><svg width="14" height="14" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 2v14M3.5 10.5 9 16l5.5-5.5"/></svg></a></div>
+    </div>
+    <div class="hb-r">
+      <span class="hud" id="heroChem">DOPAMINE · THE CHASER</span>
+      <button class="pill" id="scanNext" type="button" data-cursor="btn">Scan next subject</button>
+    </div>
+  </div></div>
+  </div>
+</section>
+
+<section class="stm" id="statement" aria-labelledby="stmT">
+  <div class="stm-pin" id="stmPin">
+    <div class="stm-amb" id="stmAmb" aria-hidden="true"></div>
+    <div class="stm-fig fig fig-dopa" id="stmFig" aria-hidden="true"></div>
+    <p class="hud stm-q" id="stmT">Every box holds one feeling</p>
+    <p class="stm-word" id="stmWord" aria-live="polite">CURIOSITY</p>
+    <p class="hud stm-cap" id="stmCap">No. 01 · DOPA · Dopamine · The Chaser</p>
+    <div class="stm-dots" id="stmDots" aria-hidden="true"></div>
+    <p class="hud-s muted stm-hint" aria-hidden="true">Keep scrolling</p>
+  </div>
+</section>
+
+<section class="lu" id="lineup" aria-labelledby="luT">
+  <div class="wrap lu-head"><div class="ch-head" style="margin-bottom:0"><span class="n">Series 01 · The lineup</span><h2 id="luT" class="bw">Eight chemicals. <em>One glitch.</em></h2><p>Scroll to move through the series. Select any card to open its issue.</p></div></div>
+  <div class="lu-pin" id="luPin"><div class="lu-track" id="luTrack"></div></div>
+  <div class="lu-prog" aria-hidden="true"><span class="hud" id="luN">01 / 09</span><span class="t"><i id="luBar"></i></span><span class="hud muted">SCROLL</span></div>
+</section>
+
+<section class="ch" id="characters" aria-labelledby="idxT">
+  <div class="wrap">
+    <div class="ch-head"><span class="n">Character index</span><h2 id="idxT" class="bw">Read the <em>files.</em></h2><p>Every figure has a chemical, an archetype and a reason to exist. Open a file to see the materials up close and who it is connected to.</p></div>
+    <div class="dm-wrap" aria-hidden="true"><canvas class="dm" id="dm"></canvas><span class="hud muted dm-l" id="dmL">INDEX · 9 FILES</span></div>
+    <div class="idx" id="idx"><ol id="idxList"></ol><div class="pv" id="idxPv" aria-hidden="true"><span class="hud-s" id="idxPvN">01</span><div class="fig" id="idxPvF"></div></div></div>
+  </div>
+</section>
+
+<section class="ch prc" id="how" aria-labelledby="howT">
+  <div class="wrap">
+    <div class="ch-head"><span class="n">How a blind box works</span><h2 id="howT" class="bw">Three moves. <em>No spoilers.</em></h2><p>You never pick the figure. You pick the moment you find out.</p></div>
+  </div>
+  <div class="prc-pin" id="prcPin">
+    <article class="pcard pc1"><span class="pn">1.</span><div><h3>Pick a sealed box</h3><p>Every box looks the same. Shake it if you like. The seal stays on until you decide.</p></div><span class="hud-s">65 × 65 × 95 mm</span></article>
+    <article class="pcard pc2"><span class="pn">2.</span><div><h3>Open it</h3><p>One random figure out of nine. Each regular about 1 : 8. The secret SYNAPSE 1 : 144.</p></div><span class="hud-s">Odds printed on every box</span></article>
+    <article class="pcard pc3"><span class="pn">3.</span><div><h3>Scan the card</h3><p>The holographic card inside unlocks the character file and its lab notes.</p></div><span class="hud-s">QR · auth seal</span></article>
+  </div>
+</section>
+
+<section class="ch" id="box" aria-labelledby="boxT">
+  <div class="wrap">
+    <div class="ch-head"><span class="n">Packaging · 65 × 65 × 95 mm</span><h2 id="boxT" class="bw">Sealed, <em>always.</em></h2><p>The box never opens on screen. Drag to turn it, or unfold it flat to read every panel: the lineup, the odds and the seal that proves it is real.</p></div>
+    <div class="bx-wrap">
+      <div class="bx-stage" id="bxStage" data-cursor="drag" tabindex="0" role="img" aria-label="NEURO blind box in 3D. Drag or use the arrow keys to rotate. Press Enter to unfold it flat.">
+        <span class="hud muted bx-hint" id="bxHint">[ DRAG TO ROTATE · ← → ]</span><span class="hud muted bx-angle" id="bxAngle">Y 000°</span>
+        <div class="bx-floor"></div>
+        <div class="cube" id="cube"></div>
+      </div>
+      <div class="bx-panel">
+        <div class="bx-btns"><button class="btn acc" id="bxUnfold" type="button" data-cursor="btn" aria-pressed="false"><span class="rl"><span><span id="bxUnfoldL">Unfold flat</span><span aria-hidden="true" id="bxUnfoldL2">Unfold flat</span></span></span></button><button class="btn ghost" id="bxSpin" type="button" data-cursor="btn"><span class="rl"><span><span>Spin 360°</span><span aria-hidden="true">Spin 360°</span></span></span></button></div>
+        <div class="bx-net"><span class="hud-s muted">Panels</span><ol class="hud-s"><li><span>Hang tab</span><span>Euro slot</span></li><li><span>Front</span><span>Scan window · wordmark</span></li><li><span>Back</span><span>Collect 8 + 1 · odds</span></li><li><span>Sides</span><span>Cobalt · auth seal</span></li><li><span>Top / bottom</span><span>Seal · production info</span></li></ol></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ch pick" id="unbox" aria-labelledby="pkT">
+  <div class="wrap">
+    <div class="ch-head"><span class="n">Try your luck</span><h2 id="pkT" class="bw">Pick a <em>box.</em></h2><p>Six sealed boxes, drawn with the real odds: each regular about 1 in 8, the secret 1 in 144. Pick one, then press and hold to open it.</p></div>
+    <div class="pk-stage" id="pkStage">
+      <div class="pk-shelf" id="pkShelf" role="group" aria-label="Six sealed boxes"></div>
+      <div class="pk-rev" id="pkRev" hidden>
+        <div class="pk-center">
+          <div class="pk-fig fig" id="pkFig" role="img" aria-label="Your figure"></div>
+          <div class="pk-scan" id="pkScan" aria-hidden="true"></div>
+          <div class="pk-box" id="pkBox" aria-hidden="true"></div>
+        </div>
+        <div class="pk-side">
+          <div class="pk-card" id="pkCard" aria-hidden="true"><div class="pk-card-in" id="pkCardIn"><div class="cf"><div><div class="fig" id="pkCardF"></div><div class="nb"><b id="pkCardN">DOPA</b><span class="serif-i" id="pkCardA">The Chaser</span></div></div></div><div class="cb">NEURO</div></div></div>
+          <p class="hud" id="pkMsg" aria-live="polite">Box selected</p>
+          <h3 class="pk-res" id="pkRes">Press and hold to open.</h3>
+          <div class="row">
+            <button class="ring-btn" id="pkHold" type="button"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56"/><circle class="p" cx="60" cy="60" r="56" pathLength="1"/></svg><span>Hold<br>to open</span></button>
+            <button class="btn acc" id="pkFile" type="button" data-cursor="btn" hidden><span class="rl"><span><span>Open the file</span><span aria-hidden="true">Open the file</span></span></span></button>
+            <button class="btn ghost" id="pkAgain" type="button" data-cursor="btn" hidden><span class="rl"><span><span>Pick another box</span><span aria-hidden="true">Pick another box</span></span></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="dk syn" id="secret" aria-labelledby="secT">
+  <div class="syn-pin" id="synPin">
+    <canvas class="syn-aura" id="synAura" aria-hidden="true"></canvas>
+    <div class="syn-fig fig fig-synapse" id="synFig" role="img" aria-label="SYNAPSE, the secret figure: grey shaggy hair, graphite wool coat with taupe ruffle lining, holographic crystal flower"></div>
+    <div class="syn-txt">
+      <span class="hud muted">Secret · No. ??</span>
+      <h2 class="syn-name" id="secT">SYNAPSE</h2>
+      <p class="serif-i syn-arch">The Glitch. Where every signal meets.</p>
+      <p class="syn-odds"><b>1 : 144</b><span>One box in 144 holds SYNAPSE (0.69%). The other 143 split evenly across the 8 regulars.</span></p>
+    </div>
+    <div class="syn-meter" aria-hidden="true"><span class="hud" id="synPct">SIGNAL 000%</span><i><b id="synBar"></b></i></div>
+  </div>
+</section>
+
+
+<section class="ch chem" id="map" aria-labelledby="mapT">
+  <div class="wrap">
+    <div class="ch-head"><span class="n">Chemistry</span><h2 id="mapT" class="bw">Who sets who <em>off.</em></h2><p>Every chemical reacts with three others. Pick a character to see its reactions.</p></div>
+    <div class="chem-wrap">
+      <div class="chem-ring" id="chemRing"><svg class="chem-lines" id="chemLines" viewBox="0 0 600 600" aria-hidden="true"></svg></div>
+      <div class="chem-info" id="chemInfo" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="ch" id="collect" aria-labelledby="colT">
+  <div class="wrap">
+    <div class="ch-head"><span class="n">Collector</span><h2 id="colT" class="bw">Collect the <em>set.</em></h2><p>Read the lab notes on every figure, then find the next drop. US$16.76 a box, Rp300.000 in Indonesia.</p></div>
+    <div class="grid">
+      <div class="c12 col-b rv-sec"><div class="rvc-head"><h3 class="col-h">Lab review <em>cards.</em></h3><p class="muted">Our lab scores every figure on detail, finish and pose. The ring turns on its own: drag to spin it, select a card to open its file.</p></div>
+        <div class="rvc-stage" id="rvcStage" aria-label="Lab review cards on a turning ring"><div class="rvc-ring" id="rvcRing"></div></div>
+        <div class="rvc-ctrl"><button class="pill" type="button" id="rvcPrev" data-cursor="btn" aria-label="Turn the ring back">&larr; Prev</button><span class="hud" id="rvcN">01 / 09</span><button class="pill" type="button" id="rvcNext" data-cursor="btn" aria-label="Turn the ring forward">Next &rarr;</button></div>
+      </div>
+
+      <div class="c4 col-b drop"><h3 class="col-h">Next drop</h3><span class="hud-s muted" id="dropLbl">20 Feb 2050 · 19:00 WIB</span><div class="cd" id="cd"><b>--</b><b>--</b><b>--</b><b>--</b><span class="hud-s muted">Days</span><span class="hud-s muted">Hrs</span><span class="hud-s muted">Min</span><span class="hud-s muted">Sec</span></div><button class="btn acc mag" id="dropNotify" type="button" data-cursor="btn"><span class="rl"><span><span>Notify me</span><span aria-hidden="true">Notify me</span></span></span></button></div>
+      <div class="c8 col-b"><h3 class="col-h">Where to buy</h3><div class="stores" id="stores"></div></div>
+    </div>
+    <div class="quiz-sec col-b">
+      <h3 class="col-h">What's your neurotype?</h3>
+      <div class="quiz">
+        <div class="qz-step" id="qz"></div>
+        <div class="qz-res" id="qzRes"><div class="lcard secret" style="--c:#FF5257"><div class="nm" style="font-size:25cqw">???</div><div class="sh"></div><div class="f fig fig-synapse" style="filter:brightness(0)"></div><div class="no"><i></i><span>NO.</span><b>??</b></div><div class="ar"><span>Your signal</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ch" id="faq-sec" aria-labelledby="faqT">
+  <div class="wrap faq-wrap">
+    <div class="faq-head"><span class="hud muted">FAQ</span><h2 id="faqT" class="bw">Before you <em>buy.</em></h2><p class="muted">Odds, authenticity and returns, in plain words.</p></div>
+    <div class="faq" id="faq"></div>
+  </div>
+</section>
+</main>
+
+<footer class="ft" id="footer">
+  <div class="wrap">
+    <svg viewBox="0 0 1000 250" role="img" aria-label="NEURO" id="ftSvg" style="margin-top:20px">
+      <defs>
+        <linearGradient id="chromeG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBFCFD"/><stop offset=".2" stop-color="#9AA3AD"/><stop offset=".36" stop-color="#FFFFFF"/><stop offset=".54" stop-color="#59626C"/><stop offset=".7" stop-color="#E6EAEE"/><stop offset="1" stop-color="#8A929C"/></linearGradient>
+        <filter id="liquid" x="-5%" y="-10%" width="110%" height="120%"><feTurbulence id="turb" type="fractalNoise" baseFrequency="0.008 0.02" numOctaves="2" seed="4"/><feDisplacementMap id="disp" in="SourceGraphic" scale="0" xChannelSelector="R" yChannelSelector="G"/></filter>
+      </defs>
+      <text x="500" y="212" text-anchor="middle" font-family="Archivo, 'Arial Narrow', sans-serif" font-weight="900" font-size="276" textLength="980" lengthAdjust="spacingAndGlyphs" fill="url(#chromeG)" filter="url(#liquid)" style="font-variation-settings:'wdth' 125">NEURO</text>
+    </svg>
+    <div class="ft-grid">
+      <div><h4 class="hud muted">Join the synapse</h4><p class="serif-i" style="font-size:24px;line-height:1.15;margin-bottom:14px">Drop alerts, lore files and the first look at Series 02.</p>
+        <form class="em-form" id="emForm" novalidate><label class="sr" for="emInput">Email</label><div class="em-row"><input id="emInput" type="email" placeholder="you@email.com" autocomplete="email" data-cursor="text"><button type="submit" data-cursor="btn">Subscribe</button></div><span class="hud-s msg" id="emMsg" aria-live="polite"></span></form></div>
+      <div><h4 class="hud muted">Explore</h4><ul><li><a class="tl-link" href="#lineup" data-cursor="link">Series 01</a></li><li><a class="tl-link" href="#characters" data-cursor="link">Characters</a></li><li><a class="tl-link" href="#unbox" data-cursor="link">Unbox</a></li><li><a class="tl-link" href="#secret" data-cursor="link">Odds</a></li><li><a class="tl-link" href="#faq-sec" data-cursor="link">FAQ</a></li></ul></div>
+      <div><h4 class="hud muted">Info</h4><ul><li>Synapse Works Studio · Halcyon City</li><li>neuro.signal</li><li>hello@neuro.signal</li><li class="hud-s muted">Contents are random. Opened boxes cannot be exchanged.</li></ul></div>
+    </div>
+    <div class="ft-bot"><span class="hud-s muted">© 2026 NEURO · Series 01</span><span class="hud-s muted">Press and hold any empty space to switch the theme</span><span class="hud-s muted">Every box is a signal.</span></div>
+  </div>
+</footer>
